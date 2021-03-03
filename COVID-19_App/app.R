@@ -22,7 +22,9 @@ server <- function(input, output){
     output$timeplot <- renderPlot(
         covid19%>%
             filter(state %in% input$state) %>%
-            ggplot(aes(x = date, y = cases, color = state)) +
+            ggplot(aes(x = date, 
+                       y = cases, 
+                       color = state)) +
             geom_line() +
             theme_minimal() +
             scale_y_log10())}

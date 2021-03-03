@@ -141,9 +141,8 @@ g2 <- gardengraph <- garden_harvest %>%
        y = "", 
        fill = "Total Weight (by Color)") 
 
-
 g1 | g2 + 
-  plot_annotation(title = "Look at these cool plots") 
+  plot_annotation(title = "Two Garden Plots") 
 
 ```
   
